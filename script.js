@@ -1,4 +1,10 @@
-function startNightCityNews() {
+const supabaseUrl = "YOUR_URL";
+const supabaseKey = "YOUR_PUBLISHABLE_KEY";
+
+const supabase = window.supabase.createClient(
+  supabaseUrl,
+  supabaseKey
+);function startNightCityNews() {
   const storiesData = document.getElementById("stories-data");
   const feed = document.getElementById("feed");
   const inspector = document.getElementById("inspector");
